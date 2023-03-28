@@ -1,6 +1,6 @@
 #pragma once
 #include "string"
-using namespace std;
+#include "card.hpp"
 
 namespace ariel{
     class Player {
@@ -8,6 +8,8 @@ namespace ariel{
             std::string name;
             int stackSize;
             int cardsTaken;
+            Card * stackCards; // array of stack cards
+            Card * takenCards; // array of taken cards
         public:
             Player(){}
             Player(std::string){}

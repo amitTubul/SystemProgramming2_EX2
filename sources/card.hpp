@@ -1,11 +1,9 @@
 #pragma once
-#include "string"
-using namespace std;
 
-namespace  ariel{
+namespace ariel{
     class Card {
         private:
-            std::string type;
+            std::string cardType;
         public:
             Card(std::string){}
     };
